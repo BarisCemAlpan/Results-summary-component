@@ -1,0 +1,144 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    --akkiz:'Hanken Grotesk', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    height: 100vh;
+    width: 100vw;   
+}
+
+.main{
+    
+    width: 40vw; height: 60vh;
+    display: flex;
+    
+}
+.result{ 
+    
+    background-color: red;
+    width: 20vw; height: 60vh;
+    border-radius: 1rem;
+    position: relative;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-evenly; text-align: center;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+ 
+}
+.daire {
+     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+     width: 11vw; height: 11vw; border-radius: 50%; align-items: center;
+     display: flex;  flex-direction: column; text-align: center;  justify-content: center;
+    } 
+.daire1 {color: hsl(0, 0%, 100%) ; padding-bottom: 1vh; font-size: 3rem;}
+.daire2 {color:hsl(241, 100%, 89%); font-size: 0.8rem;}
+.result h3 {color: hsl(241, 100%, 89%);}
+.result h2 {color:hsl(221, 100%, 96%);}
+.text {font-size:0.8rem ;color:hsl(241, 100%, 89%) ;
+        white-space: pre;  line-height: 14px;  margin-bottom: 1rem;
+    }
+.result::before{
+    content: "";
+    position: absolute;
+    right:0;
+    width: 3vh; height: 60vh;
+    background-color:  hsl(0, 0%, 100%);
+    
+    z-index: -1; 
+
+}
+.summary{
+    background-color: hsl(0, 0%, 100%);
+    width: 20vw; height: 60vh;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.summary h3 {font-weight: 800; padding: 1rem;  margin-top: .3rem;}
+
+.sonuclar{ width: 20vw; height: 36vh; margin-top: 10px;
+        display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+}
+
+.aw { width: 17.2vw; height: 7vh; margin: 3px;
+display: flex; position: relative; align-items: center; border-radius: .5rem; margin-bottom: 7px;
+}
+.icon {background-size: cover; 
+    width: 1.1rem; height: 1.1rem; position: absolute; left:.5rem; }
+.yazi {position: absolute; left:3rem;  font-size: .9rem; font-weight: 700;  }
+.sayi {position: absolute; right: 3.5rem; font-size: 0.9rem; color: hsl(224, 30%, 27%); font-weight: 500;}
+.sayi2 {position: absolute;right: 1rem; font-size: 0.9rem; color:hsl(241, 100%, 89%); font-weight: 500;}
+.a {background-image: url(lighting.svg); }
+.aa{background-color: hsla(0, 100%, 67%, 0.11);}
+.b {background-image: url(brain.svg);}
+.bb{background-color: hsla(39, 100%, 56%, 0.11);}
+.c {background-image: url(bubble-chat.svg);}
+.cc{background-color:  hsla(166, 100%, 37%, 0.11);}
+.d {background-image: url(view.svg);}
+.dd{background-color: hsla(234, 85%, 45%, 0.11);}
+.yazia {color:  #ff5757;}
+.yazib {color:hsl(39, 100%, 56%) ;}
+.yazic {color:hsl(166, 100%, 37%) ;}
+.yazid {color: hsl(234, 85%, 45%) ;}
+
+button {
+    color: hsl(0, 0%, 100%); font-size: .9rem; font-family: var(--akkiz);
+    border: none; margin: auto; margin-bottom: 1.5rem;
+    width: 17.2vw; height: 7vh; border-radius: 2rem; background-color:  hsl(224, 30%, 27%);
+}
+
+
+
+
+
+@media  (max-width: 375px) {
+ .main{
+    
+    width: 100vh;  height: 100vh;
+    display: flex; flex-direction: column;
+    
+ }
+ .result{
+    width: 100vw; height: 43vh;
+    border-radius: 0 0 1rem 1rem;
+ }
+ .result::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 100vh; height: 3vh;
+    background-color: tomato;
+    
+    z-index: -1; 
+
+}
+
+.summary{
+    background-color: hsl(0, 0%, 100%);
+    width: 100vw; height: 60vh;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.summary h3 {font-weight: 800; padding: 1rem;  margin-top: .3rem;}
+
+.sonuclar{ width: 100vw; height: 40vh; margin-top: 10px;
+        display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+}
+
+
+.aw{
+    width: 60vh;
+}
+button{width: 80vw;}
+}
